@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/create_account.css">
+    <title>Create An Account</title>
+</head>
+<body>
+    <div class="cover-box">
+        <form method="post" action="../HTML/PHP/processing-create-account.php" >
+          <h1>JamesBook</h1>
+          <p class="request">Create an account</p>
+
+          <label for="first-name" class="first-name">*First Name: </label>
+          <input
+            type="text"
+            name="first-name"
+            id="first-name"
+            placeholder="e.g. John"
+            maxlength="100"
+            class="first-name"
+            required
+          />
+
+          <label for="last-name" class="last-name">*Last Name: </label>
+          <input
+            type="text"
+            name="last-name"
+            id="last-name"
+            placeholder="e.g. Smith"
+            maxlength="100"
+            class="last-name"
+            required
+          />
+
+          <label for="age" class="age">*Enter your age: </label>
+          <input
+            type="number"
+            name="age"
+            id="age"
+            placeholder="e.g. 22"
+            maxlength="100"
+            class="age"
+            min="13"
+            max="120"
+            required
+          />
+          
+          <label for="email" class="email">*Email: </label>
+          <input
+            type="text"
+            name="email"
+            id="email"
+            placeholder="Johnsmith@JamesBook.com"
+            maxlength="100"
+            class="email"
+            required
+          />
+
+          <label for="phone" class="phone">Phone Number: </label>
+          <input
+            type="number"
+            name="phone"
+            id="phone"
+            placeholder="077..."
+            maxlength="15"
+            class="phone"
+          />
+
+          <label for="password" class="password">*Password: </label>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Password"
+            maxlength="100"
+            class="password"
+            required
+          />
+
+          <label for="terms" class="terms">*Do you agree with the Terms and Conditions</label>
+          <input
+            type="radio"
+            name="terms"
+            id="terms"
+            class="terms"
+            required
+          />
+          <input type="submit" value="Login" id="submit"/>
+        </div>
+</body>
+</html>
