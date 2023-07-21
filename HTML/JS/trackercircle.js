@@ -40,6 +40,6 @@ function moveCircle (event, x, y) {
 function removeCircle (event) {
     if (String.fromCharCode(event.keyCode) === "Q")
     {
-    circle.setAttribute("style", "size: 0;")
+      circle.setAttribute("style", "size: 0;")
     }
 }

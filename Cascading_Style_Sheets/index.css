@@ -1,0 +1,125 @@
+body {
+    background-color: #484848; /* For browsers that do not support gradients */
+    background-image: linear-gradient(0.33turn,#101010 30%, #222222 65%, black);
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+}
+
+.main-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/*
+    vv Main Content withing Page vv
+*/
+
+.textboxes {
+    position: fixed;
+    top: 33vh;
+    left: 5vw;
+
+}
+
+h1, h2 {
+    color: white;
+    font: pythagoras;
+    font-style: bold;
+    max-width: 600px;
+    margin: 0;
+    text-shadow: 4px 4px 7px #484848;
+}
+
+h1.main_header {
+    font-size: xx-large;
+    letter-spacing: 2px;
+    width: fit-content;
+    padding-bottom: 1.5vh;
+}
+
+h2 {
+    word-spacing: 2px;
+    width: 600px;
+    padding-bottom: 1vh;
+}
+
+h2.details {
+    font-size: large;
+    letter-spacing: 2px;
+    width: max-content;
+}
+
+h2.description {
+    font-style: normal;
+    font-size: small;
+    letter-spacing: 1px;
+    max-width: 600px;
+}
+
+/*
+    vv Blob vv
+*/
+
+section.blob-box {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 10vh;
+}
+.blob {
+    position: fixed;
+    top:10vh;
+    left: 10vh;
+    width: 200px;
+    height: 200px;
+}
+.blob:nth-child(2) {
+    filter: blur(10px);
+}
+
+/*
+    vv Buttons vv
+*/
+
+button {
+    cursor: pointer;
+}
+
+/*
+    vv Image Links vv
+*/
+
+.links {
+    width: 25px;
+    height: 25px;
+    position: fixed;
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: black;
+    cursor: pointer;
+}
+
+.linked-in {
+    bottom: 65px;
+    right: 65px;
+}
+
+.github {
+    bottom: 65px;
+    right: 100px;
+}
+
+.youtube {
+    bottom: 65px;
+    right: 135px;
+}
+
+.twitter {
+    bottom: 100px;
+    right: 65px;
+}
