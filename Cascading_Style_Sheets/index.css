@@ -19,6 +19,20 @@ body {
     box-sizing: border-box;
 }
 
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+    background-color: rgba(54, 54, 54, 0.5);
+}
+
 .content {
     display: flex;
     flex-wrap: wrap;
@@ -27,8 +41,20 @@ body {
     align-items: flex-start;
     min-height: 100dvh;
     padding: 20px;
-    width: auto;
+    width: 100%;
     box-sizing: border-box;
+}
+
+div.about-me {
+    background-color: rgba(0, 255, 0, 0.1); /* For browsers that do not support gradients */
+}
+
+div.experience {
+    background-color: rgba(0, 0, 255, 0.1); /* For browsers that do not support gradients */
+}
+
+div.creations {
+    background-color: rgba(255, 0, 0, 0.1); /* For browsers that do not support gradients */
 }
 
 .home {
@@ -161,10 +187,10 @@ button, .links {
 
 .links:nth-child(4) {
     grid-area: 2 / 3 / 2 / 3;
+
 }
 
-@media screen (max-width: 600px) {
-    body {
-        background-color: #484848; /* For browsers that do not support gradients */
-    }
+.links:nth-child(5) {
+    grid-area: 2 / 2 / 2 / 2;
+
 }
