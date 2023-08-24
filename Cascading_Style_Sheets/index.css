@@ -194,3 +194,12 @@ button, .links {
     grid-area: 2 / 2 / 2 / 2;
 
 }
+
+
+.orange{
+    color: orange;
+    position: fixed;
+    top: 100px;
+    left: 50px;
+
+}

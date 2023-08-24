@@ -1,8 +1,11 @@
 body {
-
+    background-color: aliceblue;
 }
 
-
+p {
+    padding: 5px;
+    margin: 0;
+}
 
 header {
     position: fixed;
@@ -37,12 +40,34 @@ footer {
 #root {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: start;
-    align-items: center;
-    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    width: 100% - 120px;
+    height: 200%;
     box-sizing: border-box;
+    padding: 60px;
 }
+
+#left {
+    width: 50%;
+    height: 750px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#right {
+    max-width: 60%;
+    height: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+/* New Blog Post */
 
 form {
     display: flex;
@@ -50,8 +75,82 @@ form {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    min-height: 100dvh;
+    min-height: 50dvh;
+    max-height: 90dvh;
     padding: 60px 20px 60px 20px;
     width: 100%;
     box-sizing: border-box;
+}
+
+/* Past Blog Post */
+
+.blog-post {
+    border: 1px solid black;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-bottom: 5px;
+    max-width: 700px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.blog-post > p {
+    max-width: 600px;
+    width: auto;
+}
+
+.blog-post > * {
+    display: inline-block;
+}
+
+.blog-post > p:nth-child(1) {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.blog-post > p:nth-child(2) {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.blog-post > p:nth-child(3) {
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+.blog-post > h2 {
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    text-align: center;
+}
+
+.blog-post > p:last-child {
+    background-color: orange;
+    grid-row-start: 3;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+@media screen and (max-width: 1400px) {
+    #root {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #form {
+        max-width: 500px;
+        height: auto;
+    }
+
+    #left {
+        width: 100%;
+        height: auto;
+    }
+
+    #right {
+        width: 100%;
+        height: auto;
+    }
 }
