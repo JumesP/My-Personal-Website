@@ -145,12 +145,12 @@ form {
     }
 
     #left {
-        width: 100%;
+        width: 50%;
         height: auto;
     }
 
     #right {
-        width: 100%;
+        width: 50%;
         height: auto;
     }
 }
