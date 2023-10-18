@@ -12,8 +12,28 @@
 <body>
 <header id="header">Blog</header>
 <div id="root">
-    <div class="left">
-        <a href="/HTML/new_post.php">Create a new post</a>
+    <div id="left">
+        <a href="/HTML/new_post.php" class="Create_new_post">Create a new post</a>
+        <?php
+        $conn = new mysqli('localhost', 'jameshos_user', 'password1231', 'jameshos_Accounts');
+        $sql = "SELECT * FROM Blog";
+        if ($result = mysqli_query($conn, $sql)) {
+            if (mysqli_num_rows($result) >= 0) {
+                while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
+                    if ($row["ID"] == mysqli_num_rows($result) + 100000) {
+                        echo "<div class='newest-post'>";
+                        echo "<p>" . $row['ID'] . "</p>";
+                        echo "<p>@" . $row['USER'] . "</p>";
+                        echo "<p>" . $row['DATE'] . "</p>";
+                        echo "<h2>" . $row['TITLE'] . "</h2>";
+                        echo "<p> Postage Content: <br>" . $row['CONTENT'] . "</p>";
+                        echo "</div>";
+                    }
+                }
+            }
+            $conn->close();
+        }
+        ?>
     </div>
 
     <div id="right">

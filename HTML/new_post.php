@@ -34,7 +34,7 @@
             $blog_title = $_POST['blog_title'];
             $blog_post = $_POST['blog_post'];
             $blog_user = "James";
-            $blog_date = "2023-08-24";
+            $blog_date = "2023-08-24"; // fix
 
             // Connect to the database
             $conn = new mysqli('localhost', 'jameshos_user', 'password1231', 'jameshos_Accounts');
