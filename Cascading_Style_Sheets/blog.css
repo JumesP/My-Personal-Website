@@ -156,6 +156,15 @@ form > input, form > label {
     font-size: 2vw;
 }
 
+form > input, form > textarea {
+    color : black;
+}
+
+form > textarea {
+    height: calc(2vw * 5);
+    width: 100%;
+}
+
 input#submit {
     margin-top: 5px;
 }

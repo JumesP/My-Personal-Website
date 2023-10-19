@@ -15,9 +15,9 @@
         <form method="post">
             <h1 id="new-post">Enter New Blog Post</h1>
             <label for="new-post-title">Post Title: </label><input type="text" id="new-post-title" name="blog_title"/><br />
-            <label for="new-post">Post Contents: </label><input type="text" id="new-post" name="blog_post"size="50" /><br />
+            <label for="new-post">Post Contents: </label><textarea id="new-post" name="blog_post"></textarea><br />
             <label for="post_date">Post Date: </label><input type="date" name="post_date" id="post_date" />
-            <input type="submit" value="Submit" id="submit" name="submit" />
+            <a href="/blog.php"><input type="submit" value="Submit" id="submit" name="submit"/></a>
         </form>
     </div>
 </div>
