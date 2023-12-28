@@ -48,6 +48,7 @@ header > .blog {
     padding: 20px;
     width: 100%;
     box-sizing: border-box;
+    border-top: white solid 5px;
 }
 
 div.about-me {
@@ -86,13 +87,12 @@ div.creations {
 
 .textboxes {
     position: relative
-    
+
 }
 
 h1, h2 {
     color: white;
-    font-family: "pythagoras", "Times";
-    font-weight: bold;
+    font-family: Arial, sans-serif, serif;
     max-width: 600px;
     margin: 0;
     text-shadow: 4px 4px 7px #484848;
@@ -262,7 +262,7 @@ button, .links {
         transform: translate(90px, 30px);
         width: 50%;
     }
-    
+
     .blob:nth-child(2) {
         transform: translate(-95px, 30px);
         width: 50%;
