@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bouncy</title>
+  </head>
+  <body>
+    <canvas
+      id="canvas"
+      width="500"
+      height="150"
+      style="background: bisque; border: 2px solid tomato"
+      >[Canvas Area]</canvas
+    >
+
+    <style></style>
+    <script>
+      function init() {
+        const canvas = document.getElementById("canvas");
+
+        if (canvas.getContext) {
+          const context = canvas.getContext("2d");
+          const cw = canvas.width;
+          const ch = canvas.height;
+          let x = 5,
+            y = 44,
+            dx = 5,
+            dy = 5;
+          context.fillStyle = "red";
+
+          setInterval(function () {
+            if (x + dx > cw - 30 || x + dx < 10) dx = -dx;
+            if (y + dy > ch - 30 || y + dy < 10) dy = -dy;
+
+            x += dx;
+            y += dy;
+
+            paint(context, cw, ch, x, y);}, 25);
+
+          function paint(context, cw, ch, x, y) {
+            context.clearRect(0, 0, cw, ch);
+            context.beginPath();
+            context.arc(x, y, 30, 0, Math.Pi * 2, true);
+            context.fill();
+          }
+        }
+      }
+
+      document.addEventListener("DOMContentLoaded", init);
+    </script>
+  </body>
+</html>

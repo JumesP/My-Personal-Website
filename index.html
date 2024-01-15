@@ -4,9 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./Cascading_Style_Sheets/index.css" />
-    <script src="./JavaScript/index.js"></script>
-    <title>James Website</title>
+    <link rel="stylesheet" href="src/index.css" />
+    <title>James Price - Portfolio Page</title>
     <link rel="shortcut icon" type="image/x-icon" href="images/me.JPG" />
   </head>
   <body>
@@ -15,7 +14,8 @@
       <header class="header">
         <button>Menu</button>
         <p>Hi</p>
-        <a href="HTML/blog.php" class="blog">Blog</a>
+        <a href="views/HTML/blog.php" class="blog">Blog</a>
+        <a href="views/CookieClicker/v1/index.html" class="cc">Cookie Clicker</a>
       </header>
 
       <div class="home content">
@@ -48,20 +48,29 @@
       </div>
 
       <div class="creations content">
+        <a href="">
         <div class="creation">
           <p>Calulator App</p>
-          <img src="/images/Calculator-app.png" alt="" class="creations-img" />
+          <img src="/images/calculator-app.png" alt="calculator_app_image" />
         </div>
+        </a>
+        <a href="">
         <div class="creation">
           <p>Arduino Temperature and Humitity Display</p>
-          <img src="/images/IMG_3670.JPEG" alt="" class="creations-img" />
+          <img src="/images/IMG_3670.png" alt="arduino_image" class="creations-img" />
         </div>
-        <div class="creation">example 3</div>
-        <div class="creation">example 4</div>
-        <div class="creation">example 5</div>
-        <div class="creation">example 6</div>
-        <div class="creation">example 7</div>
-        <div class="creation">example 8</div>
+        </a>
+        <a href="views/CookieClicker/v1/index.html">
+        <div class="creation">
+          <p>Cookie Clicker</p>
+          <img src="/views/CookieClicker/v1/images/Cookie.jpg" alt="Cookie" class="creations-img" />
+        </div>
+        </a>
+        <a href=""><div class="creation">example 4</div></a>
+        <a href=""><div class="creation">example 5</div></a>
+        <a href=""><div class="creation">example 6</div></a>
+        <a href=""><div class="creation">example 7</div></a>
+        <a href=""><div class="creation">example 8</div></a>
       </div>
 
       <!-- Image Links-->
@@ -99,5 +108,6 @@
         </a>
       </div>
     </div>
+    <script src="src/index.js"></script>
   </body>
 </html>
