@@ -1,4 +1,4 @@
-These are the files used to create my website "james.host20.uk"
+These are the files used to create my website "https://jamesproce.000webhostapp.com/" (sadly had to change)
 
 Using HTMl, CSS, PHP, mySQL and a little bit of Javascript, hosted on thecompletewebhosting.com, which i got free from a Udemy course
 
