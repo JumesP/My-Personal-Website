@@ -1,3 +1,6 @@
+import Header from '../components/Header'
+import Content from '../components/Content'
+
 export default function About() {
     return (
         <main className=" bg-transparent">
