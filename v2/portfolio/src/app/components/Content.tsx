@@ -11,15 +11,15 @@ export default function Content() {
                 <p className="text-xs text-slate-900 mx-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore libero corrupti necessitatibus fugiat itaque. Numquam reprehenderit, dolorem omnis natus ratione necessitatibus cum, iste ut totam illum tenetur ipsum, repellat quae.</p>
             </div>
             <div className="bg-slate-200 rounded-lg col-span-1 row-span-1 space-y-5 shadow-xl">
-                {/* <h1 className="text-2xl mx-4 font-semibold mt-8">Come Find Me</h1> */}
-                {/* <div className="bg-slate-300 mx-3 h-32 rounded-lg grid grid-cols-3 grid-row-2 space-x-8 space-y-8 p-6">
-                    <FaGithub size={38}/>
-                    <CiLinkedin size={38} />
-                </div> */}
+                <h1 className="text-2xl mx-4 font-semibold mt-8">Come Find Me</h1>
+                <div className="bg-slate-300 mx-3 h-32 rounded-lg grid grid-cols-3 grid-row-2 space-x-8 space-y-8 p-6">
+                    {/* <FaGithub size={38}/>
+                    <CiLinkedin size={38} /> */}
+                </div>
             </div>
             <div className="bg-slate-200 rounded-lg col-span-1 row-span-1 shadow-xl">
-                {/* <h1 className="text-2xl mx-6 font-semibold mt-4">Download My CV</h1> */}
-                {/* <div className="bg-slate-900 mx-3 mt-24 h-10 rounded-lg"></div> */}
+                <h1 className="text-2xl mx-6 font-semibold mt-4">Download My CV</h1>
+                <div className="bg-slate-900 mx-3 mt-24 h-10 rounded-lg"></div>
             </div>
             <div className="bg-slate-200 rounded-lg col-span-1 row-span-2 shadow-xl"></div>
             <div className="bg-slate-200 rounded-lg col-span-2 row-span-2 shadow-xl"></div>
