@@ -35,3 +35,7 @@ body {
     text-wrap: balance;
   }
 }
+
+.h-2xscreen {
+  height: calc(2*100dvh)
+}
